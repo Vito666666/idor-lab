@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f5f9;
+      padding: 2em;
+    }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    }
+    .flag {
+      background: #e6ffe6;
+      color: #116329;
+      padding: 1em;
+      border-radius: 8px;
+      margin-top: 1.5em;
+      font-weight: bold;
+      font-size: 1.6em;
+      text-align: center;
+    }
+    .error {
+      color: red;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="profileCard">
+    <h2>👤 Uživatelský profil</h2>
+    <div id="content"></div>
+  </div>
+  <script>
+    const id = window.location.hash.substring(1);
+    const content = document.getElementById('content');
+    if (id === '1305') {
+      content.innerHTML = `
+        <p><strong>Email:</strong> uzivatel1305@online-service.thm</p>
+        <p><strong>Stav účtu:</strong> Aktivní</p>
+        <p>Vítej zpět.</p>
+      `;
+    } else if (id === '1000') {
+      content.innerHTML = `
+        <p><strong>Email:</strong> admin@online-service.thm</p>
+        <p><strong>Stav účtu:</strong> Administrátor</p>
+        <div class="flag">🎉 MTA{idor_easy}</div>
+      `;
+    } else {
+      content.innerHTML = `<p class="error">⛔ Tento profil neexistuje nebo není přístupný.</p>`;
+    }
+  </script>
+</body>
+</html>

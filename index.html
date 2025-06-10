@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inbox</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      padding: 2em;
+    }
+    .inbox {
+      max-width: 750px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .email {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em 1.5em;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+    .email:hover {
+      background-color: #f9fafb;
+    }
+    .left {
+      max-width: 80%;
+    }
+    .sender {
+      font-weight: bold;
+      margin-bottom: 0.2em;
+      color: #333;
+    }
+    .snippet {
+      color: #555;
+      font-size: 0.95em;
+    }
+    .timestamp {
+      color: #aaa;
+      font-size: 0.8em;
+      white-space: nowrap;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>📥 Přijaté zprávy</h1>
+  <div class="inbox">
+    <div class="email">
+      <div class="left">
+        <div class="sender">noreply@newsletter.fun</div>
+        <div class="snippet">🎉 Nový článek: Jak být produktivnější doma i v práci</div>
+      </div>
+      <div class="timestamp">8:42</div>
+    </div>
+    <div class="email">
+      <div class="left">
+        <div class="sender">security@safe-alerts.com</div>
+        <div class="snippet">Pokus o přihlášení. <a href="profile/#1999">Zkontrolovat</a></div>
+      </div>
+      <div class="timestamp">8:14</div>
+    </div>
+    <div class="email">
+      <div class="left">
+        <div class="sender">support@online-service.thm</div>
+        <div class="snippet">Díky za registraci. <a href="profile/#1305">Zobrazit profil</a></div>
+      </div>
+      <div class="timestamp">7:59</div>
+    </div>
+    <div class="email">
+      <div class="left">
+        <div class="sender">ads@vpn-promos.cz</div>
+        <div class="snippet">🔥 Sleva 50 % na VPN. <a href="profile/#7777">Více info</a></div>
+      </div>
+      <div class="timestamp">7:30</div>
+    </div>
+    <div class="email">
+      <div class="left">
+        <div class="sender">itdesk@helpcenter.com</div>
+        <div class="snippet">Potvrď své zařízení. <a href="profile/#4242">Zobrazit požadavek</a></div>
+      </div>
+      <div class="timestamp">7:05</div>
+    </div>
+  </div>
+</body>
+</html>
